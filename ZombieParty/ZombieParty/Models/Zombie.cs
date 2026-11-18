@@ -41,5 +41,7 @@ namespace ZombieParty.Models
         [Display(Name = "HuntingLogs")]
         [ValidateNever] 
         public virtual List<HuntingLog> HuntingLogs { get; set; }
+
+        public bool IsFavorite { get; set; }
     }
 }
