@@ -7,6 +7,10 @@
         </div>
         <img class="card-img-top img-fluid d-block mx-auto mb-3" src="@AppConstants.ImagePathViewsZombies@(string.IsNullOrWhiteSpace(Model.Image) ? AppConstants.ImageGeneric : Model.Image)" alt="Zombie photo" style="width:85%">
         <div class="card-body p-1 px-3 row">
+            <div class="position-absolute">
+                <a class="favorite @(Model.IsFavorite? "text-primary" : "text-dark")><i class="fa-solid fa-heart-circle-plus"></i></a>
+            </div>
+
             <div class="col-6" style="padding-left:25px;">
                 <span class="badge p-2 border w-100 btn-dark">@Model.ZombieType?.TypeName</span>
             </div>

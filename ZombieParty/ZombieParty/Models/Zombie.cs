@@ -9,6 +9,8 @@ namespace ZombieParty.Models
     {
         public int Id { get; set; }
 
+        public bool IsFavorite { get; set; }
+
         [DisplayName("Name")]
         [StringLength(20, MinimumLength = 5)]
         public string Name { get; set; }
